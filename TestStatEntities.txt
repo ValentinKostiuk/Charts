@@ -1,0 +1,35 @@
+1. Application which is tested
+2. Test
+3. Test run
+4. Test result
+
+Application which is tested:
+  1. Name
+  2. Description
+  
+Test:
+  1. Name/Number (?)
+  2. Description
+  3. Are parametrized tests are separate tests or parameters are attributes of launch ?
+  4. Type of test (Integration/Component/Unit)
+  
+Test Run:
+  1. Number of launch
+  2. Number of tests run
+  3. Total Duration (?) can be calculated
+  4. Git Branch
+  
+Test Result:
+(Single test launch stats)
+  1. Test run it belongs
+  2. Test which is run
+  3. Test duration
+  4. Test has passed (success/fail)
+  5. Test parameters (?)
+  6. Other test attributes (should be easy to extend)
+    * Browser
+    * OS
+    * Parameters
+    * DocType
+    * Protocol
+    * Mode
