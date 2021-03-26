@@ -1,0 +1,14 @@
+job("Lab5 Generated Job Git 0"){
+    parameters{
+		stringParam('Object', 'Undescribed', 'Description of param')
+	}
+  
+    steps{
+		shell('echo $JOB_NAME $BUILD_NUMBER')
+        shell('echo $Object')
+	}
+	
+    publishers{
+		downstream('Lab5Down', 'SUCCESS')
+	}
+}
