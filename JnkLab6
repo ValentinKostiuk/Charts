@@ -1,0 +1,16 @@
+node{
+    stage('git'){
+        git('https://github.com/ValentinKostiuk/Charts.git')   
+    }
+    stage('create'){
+        sh "touch file.txt"
+    }
+    stage('write'){
+        sh "echo 'string' > file.txt"    
+    }
+    stage('print'){
+        sh "cat file.txt"
+        sh "ls"
+        sh "cat JnkLab6"
+    }
+}
